@@ -1,0 +1,31 @@
+//prefix
+$prefix: 'btn' !default;
+
+//fonts
+$font: 		'Khula', sans-serif;
+
+//durations
+$fast: 		.1s !default;
+$med:		.2s !default;
+$slow: 		.4s !default;
+
+//colors
+$blue-dark: 		#003171 !default;
+$blue-light: 		#22A7F0 !default;
+$green-dark: 		#006442 !default;
+$green-light: 		#049372 !default;
+$orange: 			#F9690E !default;
+$pink: 				#f16162 !default;
+$red: 				#DC3023 !default;
+
+$white: 			#ffffff !default;
+$black: 			#000000 !default;
+
+//Browser prefixes
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+
+//compile effects
+$includeEffects: true !default;

@@ -1,0 +1,118 @@
+/* MAIN
+=========================== */
+body{
+	font-family: $font;
+}
+.container{
+	width: 1120px;
+	margin: 0 auto;
+}
+a{
+	position: inline-block;
+	text-decoration: none;
+}
+.flexbox{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+}
+/* HEADER
+=========================== */
+header{
+	position: relative;
+	background: $green-dark;
+	height: 90vh;
+	max-height: 700px;
+
+	.container{
+		align-items: center;
+	}
+
+	.logo{
+		width: 25%;
+
+		a 			{color: $white;}
+
+		h2{
+			padding: 25px 0;
+			margin: 0;
+			font-weight: 800;
+			font-size: 2.5em;
+			text-transform: uppercase;
+		}
+	}
+	.main-nav{
+		width: 75%;
+		
+		ul{
+			padding: 0;
+			margin: 0;
+			text-align: right;
+		}
+
+		li{
+			display: inline-block;
+
+			a{
+				display: block;
+				padding: 15px 20px 10px 20px;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 1.2em;
+			}
+
+			&:last-child{
+				background: darken($green-dark, 5%);
+			}
+		}
+	}
+}
+.intro{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	@include transform(-50%,-50%);
+
+	h1{
+		font-size: 2.8em;
+		font-weight: 800;
+	}
+	h3{
+		margin-top: 10px;
+		font-size: 1.4em;
+	}
+}
+.scroll-down{
+	position: absolute;
+	display: block;
+	text-align: center;
+	top: 90%;
+	left: 50%;
+	font-weight: 300;
+	font-size: 1.1em;
+	color: $white;
+	@include transform(-50%, 0);
+
+	i{
+		font-size: 2em;
+		display: block;
+	}
+}
+
+
+/* CONTENT
+=========================== */
+.content{
+	border: 1px solid red;
+}
+/* FOOTER
+=========================== */
